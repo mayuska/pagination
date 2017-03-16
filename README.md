@@ -92,10 +92,10 @@ Method | Returns | Description
 
  var pag1 = new pagination(document.getElementsByClassName('pagination')[0],
      {
-         currentPage: 1,			  // number
+         currentPage: 1,		// number
          totalItems: data.length,	  // number
-         itemsPerPage: itemsPerPage,  // number
-         stepNum: 3,				  // number
+         itemsPerPage: itemsPerPage,    // number
+         stepNum: 3,			// number
          onInit: displayContent		  // function
      });
  pag1.onPageChanged(displayContent);
