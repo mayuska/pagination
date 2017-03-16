@@ -36,6 +36,23 @@ var pagination = function (paginationWrapper, data) {
         return currentPage;
     };
 
+
+    this.getPrevPage = function () {
+        if (currentPage > 1) {
+            return currentPage--;
+        }
+
+        return false;
+    };
+
+    this.getNextPage = function () {
+        if (currentPage < numPages) {
+            return currentPage++
+        }
+
+        return false;
+    };
+
     var paginationContainer = function (paginationWrapper) {
         var template = [
             '<a class="arrowLeft">&#9668;</a>',     // previous
